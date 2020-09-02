@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="modal-back">
+        
+        <div class="modal">
+            <button class="close-modal"><ion-icon name="close"></ion-icon></button>
+            <h1>Add a Book</h1>
+            <form id3="form">
+                <ul>
+                    <li>
+                        <input type="text" name="booktitle" id="book-title" placeholder="Book Title" required>
+                    </li>
+                    <li>
+                        <input type="text" name="bookauthor" id="book-author" placeholder="Author" required>
+                        <input type="text"  pattern="^[0-9]*$" name="bookpages" id="book-pages" placeholder="# of Pages" required> 
+                    </li>
+                    <li>
+                        <label for="checkbox">I haven't read this.</label>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                    </li>
+                    <li>
+                        <input type="submit" value="Add Book">
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Library</h1>
+            <input class="add-book" type="button" value="Add Book">
+        </header>
+        <div class="card-container">
+        </div>
+    </div>
+</body>
+
+</html>
